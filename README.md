@@ -45,7 +45,7 @@
   1. 절차지향
     - 순서:절차(위에서 아래로) 개발하고 실행
     - 간단하고 명료함
-    - 재사용성 X, 유지보수 X
+    - 재사용성 X, 유지보수 X 
     - 간단한 구조의 프로그램을 만들때 많이 사용
   2. 객체지향: 
     - 모든 걸 객체 사용
@@ -66,7 +66,28 @@
 ## 3. 버전관리도구
   - 버전관리 목적
   - 협업을 위한 목적
+  - 종류(SVN, GIT, 비트버킷)
   - git → 버전관리도구
   - github → git을 웹 클라우드 기반에서 동작 서비스
   - gitlab → git을 회사서버 기반으로 동작(회사서버를 회사에서만 접속하도록 막음)
   - 아틀라시안 회사(비트버킷 + 소스트리)
+  
+### 3-1. 초기 git 프로젝트 생성
++ Github(웹 클라우드: Global)
++ PC or 노트북(Local)
++ Global → Remote(원격) → Local
+
++ COMMIT: 로컬 버전 생성
++ PUSH: 로컬에서 생성 된 버전을 원격 저장소(Github)에 업로드
++ PULL: 원격 저장소(Github)로 부터 파일을 다운로드
+
+
+1. 로컬: git 설치
+2. GITHUB: github rppository 생성
+3. 로컬: git conifg --global user.email and user.name 설정
+4. 로컬: git init 
+5. 로컬: git add [파일]
+6. 로컬: git commit -m "init project"
+7. 로컬: git remote add [repository 주소]
+8. 로컬: git remote -v 
+9. 로컬: git push -u origin master
