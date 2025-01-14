@@ -10,12 +10,28 @@
 
 int main() {
     int score[5];
+	int total = 0;
+	double avg;
+	int count;                        // 배열 요소의 개수를 저장할 변수
+    
     // sizeof(score)     → 20 Byte
     // sizeof(socre[0])  → 4 Byte
     int count = sizeof(score) / sizeof(score[0]);
     printf("배열길이: %d", count);
 
-    for(int i=0; i < count; i++) {
-        // 블라블라~
-    }
+    count = sizeof(score) / sizeof(score[0]);   // 배열 요소의 개수 계산
+	for (int i = 0; i < count; i++) {     // 11행에서 계산한 count만큼 반복
+		scanf("%d", &score[i]);
+	}
+
+	for (int i = 0; i < count; i++) {     // 11행에서 계산한 count만큼 반복
+		total += score[i];
+	}
+	avg = total / (double)count;      // 총합을 count로 나누어 평균 계산
+
+	for (int i = 0; i < count; i++) {     // 11행에서 계산한 count만큼 반복
+		printf("%5d", score[i]);
+	}
+	printf("\n");
+	printf("평균 : %.1lf\n", avg);
 }
