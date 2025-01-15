@@ -27,7 +27,7 @@
 
 int main() {
     char fruit[6] = "apple";
-    char fruit[6] = {'a', 'p', 'p', 'l', 'e'};  // 가능은 하지만 불편해서 사용하지 않음!
+    // char fruit[6] = {'a', 'p', 'p', 'l', 'e'};  // 가능은 하지만 불편해서 사용하지 않음!
 
     char fruit[6];
     fruit[0] = 'a';
@@ -35,8 +35,11 @@ int main() {
     fruit[2] = 'p';
     fruit[3] = 'l';
     fruit[4] = 'e';
-    fruit[5] = '\0';
-
-    // 널문자 직접 입력
+    fruit[5] = '\0';// 널문자 직접 입력
+    
+    printf("최초 문자열 : % s\n", fruit);     // 초기화 문자열 출력
+	printf("문자열 입력 : ");
+	scanf("%s", fruit);                       // 새로운 문자열 입력
+	printf("입력 후 문자열 : %s\n", fruit);   // 입력된 문자열 출력
 
 }
