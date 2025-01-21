@@ -12,7 +12,8 @@ void main(){
     struct good *p;
     p = s;
     p++;
-    
+    // .  : 구조체 접근
+    // -> : 포인터로 구조체 접근
     printf("%s\n", p-> name);
     printf("%d\n", p-> age);
 }
